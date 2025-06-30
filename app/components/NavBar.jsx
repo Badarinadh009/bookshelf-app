@@ -10,6 +10,7 @@ function NavBar() {
         <li><Link href="/books">Books</Link></li>
         <li><Link href="/add-book">Add Books</Link></li>
         <li><Link href="/about">About</Link></li>
+        <li><Link href="/shelf">Shelf</Link></li>
       </ul>
     </div>
   )
