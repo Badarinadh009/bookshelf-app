@@ -7,8 +7,9 @@ export default function BookDetailsPage(){
     const isAdded=shelf.some((b)=>b.id===params.id);
     return(
         <div>
-            {isAdded ? (<button onClick={()=>removeFromShelf(params.id)}>X</button>)
-            : (<button onClick={()=>addToShelf(book)}>+</button>)}
+            {isAdded ? (
+                <button className="cursor-pointer" onClick={()=>removeFromShelf(params.id)}>X</button>)
+            : (<button className="cursor-pointer" onClick={()=>addToShelf(book)}>+</button>)}
         <div>
             <h1>Book details</h1>
             <p>BookID:{params.id}</p>
